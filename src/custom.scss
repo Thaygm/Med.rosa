@@ -1,0 +1,14 @@
+$primary:       #E6B2C6!default;
+$secondary:     #D6E5FA !default;
+$light:         #FEF6FB !default;
+$dark:          #D77FA1  !default;
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "light":      $light,
+  "dark":       $dark,
+) !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
