@@ -46,8 +46,4 @@ function Medicine() {
   );
 }
 
-
-
-
-
 export default Medicine;

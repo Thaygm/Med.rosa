@@ -13,7 +13,7 @@ function Home() {
           <img src='https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia13562/reproducao-outubro-rosa-artigos-cursos-cpt.jpg' className='d-block mx-auto' style={{ maxWidth: '100%', maxHeight: '400px' }} alt='Campanha do Outubro Rosa 2023' />
           <div className='carousel-caption d-none d-md-block'>
             <h5>Campanha do Outubro Rosa 2023</h5>
-            <p>começa nesta terça!</p>
+            <p>Começa nesta terça!</p>
           </div>
         </div>
         <div className='carousel-item' data-bs-interval='2000'>
@@ -27,7 +27,7 @@ function Home() {
           <img src='https://uploads.metropoles.com/wp-content/uploads/2022/02/25122533/foto-mulher-sem-blusa-com-simbolo-contra-o-cancer-de-mama.jpg' className='d-block mx-auto' style={{ maxWidth: '100%', maxHeight: '400px' }} alt='Consultas da Campanha Outubro Rosa' />
           <div className='carousel-caption d-none d-md-block'>
             <h5>Consultas da Campanha Outubro Rosa</h5>
-            <p>já foram 100% das agendadas.</p>
+            <p>Já foram 100% das agendadas.</p>
           </div>
         </div>
       </div>
