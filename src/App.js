@@ -7,10 +7,10 @@ import Medicine from './components/Medicine';
 
 function App() {
   return (
-    <div>
+    <div className='vh-100 bg-light'>
       <Navigationbar />
       <Home />
-      <Medicine />
+      {/* <Medicine /> */}
     </div>
   );
 }
