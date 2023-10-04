@@ -9,8 +9,8 @@ function App() {
   return (
     <div className='vh-100 bg-light'>
       <Navigationbar />
-      <Home />
-      {/* <Medicine /> */}
+      {/* <Home /> */}
+      <Medicine />
     </div>
   );
 }

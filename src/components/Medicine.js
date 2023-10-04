@@ -1,9 +1,10 @@
 import React from 'react';
+import Logo from '../assets/filetype-pdf.svg';
 
 function Medicine() {
   return (
     <div className='container mt-5 text-center'>
-      <h1 className='text-center pb-5'>Busca de Medicamento</h1>
+      <h1 className='text-center pb-3'>Busca de Medicamento</h1>
       <div className='row'>
         <div className='col-12 col-md-8 offset-md-2'>
           <h2 className='text-center'>Informações do Medicamento</h2>
@@ -36,9 +37,9 @@ function Medicine() {
             </tbody>
           </table>
         </div>
-          <h2>Download da Bula</h2>
+          <h2 className='pb-2'>Download da Bula</h2>
           <a href='/bula-do-medicamento.pdf' download>
-            Download da Bula
+          <img src= {Logo}  style={{ maxWidth: '100%', maxHeight: '200px', width: '50px' }} alt='Logo PDF' />
           </a>
         </div>
       </div>

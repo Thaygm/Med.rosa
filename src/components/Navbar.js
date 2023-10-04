@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navigationbar() {
   return (
-    <nav className='navbar navbar-expand-lg bg-dark p-4'>
+    <nav className='navbar navbar-expand-lg bg-dark p-3'>
       <div className='container-fluid'>
         <img className='navbar-brand'src='https://www.medware.com.br/wp-content/uploads/2022/08/logo-medware.png' style={{ maxWidth: '100%', maxHeight: '75px' }} alt='Logo Medware'/>
         <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
