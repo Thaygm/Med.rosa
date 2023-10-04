@@ -1,15 +1,13 @@
 import React from 'react';
 import Navigationbar from './components/Navbar';
-import Home from './components/Home';
-import Medicine from './components/Medicine';
+import PublicRoute from './routes/PublicRoutes';
 
 function App() {
   return (
-    <div className='vh-100 bg-light'>
-      <Navigationbar />
-      <Home />
-      {/* <Medicine /> */}
-    </div>
+    <>
+    <Navigationbar />
+    <PublicRoute />
+    </>
   );
 }
 
