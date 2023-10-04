@@ -1,5 +1,7 @@
 import React from 'react';
 import Navigationbar from './components/Navbar';
+import Home from './components/Home';
+import Medicine from './components/Medicine';
 
 
 
@@ -7,8 +9,8 @@ function App() {
   return (
     <div>
       <Navigationbar />
-      <p className='primary-color'>qualquer coisa por aqui!</p>
-      {/* <Counter /> */}
+      <Home />
+      <Medicine />
     </div>
   );
 }
