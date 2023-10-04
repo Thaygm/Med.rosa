@@ -2,12 +2,12 @@ import React from 'react';
 
 function Medicine() {
   return (
-    <div className="container mt-5 text-center">
-      <h1 className="text-center pb-5">Busca de Medicamento</h1>
-      <div className="row">
-        <div className="col-12 col-md-8 offset-md-2">
-          <h2 className="text-center">Informações do Medicamento</h2>
-          <table className="table table-striped table-primary mt-4">
+    <div className='container mt-5 text-center'>
+      <h1 className='text-center pb-5'>Busca de Medicamento</h1>
+      <div className='row'>
+        <div className='col-12 col-md-8 offset-md-2'>
+          <h2 className='text-center'>Informações do Medicamento</h2>
+          <table className='table table-striped table-primary mt-4'>
             <tbody>
               <tr>
                 <th>Nome do Produto</th>
@@ -37,7 +37,7 @@ function Medicine() {
           </table>
         </div>
           <h2>Download da Bula</h2>
-          <a href="/bula-do-medicamento.pdf" download>
+          <a href='/bula-do-medicamento.pdf' download>
             Download da Bula
           </a>
         </div>
