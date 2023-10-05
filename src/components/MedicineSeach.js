@@ -31,7 +31,8 @@ const MedicineSearch = () => {
   }, [query]);
 
   const handleItemClick = () => {
-    setResults([]); // Limpar a lista de resultados ao clicar
+    setResults([]); 
+    setQuery('');
   };
 
   return (
@@ -40,6 +41,7 @@ const MedicineSearch = () => {
         className='form-control me-5'
         type='text'
         placeholder='Digite sua busca...'
+        value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
       <ul className='list-group custom-list'>
@@ -49,7 +51,7 @@ const MedicineSearch = () => {
             key={index}
             onClick={handleItemClick}
           >
-            <li className='list-group-item custom-list-item p-1'>
+            <li className='list-group-item custom-list-item p-1 z-3'>
               <div className='ms-2'>
                 <div className='fw-bold'>{medicamento.nomeProduto}</div>
                 <p className='text-limit'>{medicamento.razaoSocial}</p>
