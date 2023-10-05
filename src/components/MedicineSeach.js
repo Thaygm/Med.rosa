@@ -49,7 +49,7 @@ const MedicineSearch = () => {
             key={index}
             onClick={handleItemClick}
           >
-            <li className='list-group-item custom-list-item'>
+            <li className='list-group-item custom-list-item p-1'>
               <div className='ms-2'>
                 <div className='fw-bold'>{medicamento.nomeProduto}</div>
                 <p className='text-limit'>{medicamento.razaoSocial}</p>
