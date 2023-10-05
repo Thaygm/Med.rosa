@@ -9,15 +9,17 @@ const MedicineSearch = () => {
   useEffect(() => {
     if (query.length >= 3) {
       axios
-        .get(
-          `https://bula.vercel.app/pesquisar?nome=${query}`
-        )
+        .get(`https://bula.vercel.app/pesquisar?nome=${query}`)
         .then((response) => {
-          let listaMed = []
-          response.data.content.map(medicamento => {
-            const med = {nomeProduto:medicamento.nomeProduto, razaoSocial:medicamento.razaoSocial, numProcesso:medicamento.numProcesso}
+          let listaMed = [];
+          response.data.content.map((medicamento) => {
+            const med = {
+              nomeProduto: medicamento.nomeProduto,
+              razaoSocial: medicamento.razaoSocial,
+              numProcesso: medicamento.numProcesso,
+            };
             listaMed.push(med);
-          }) 
+          });
           setResults(listaMed);
         })
         .catch((error) => {
@@ -27,8 +29,11 @@ const MedicineSearch = () => {
       setResults([]);
     }
   }, [query]);
-  
-  
+
+  const handleItemClick = () => {
+    setResults([]); // Limpar a lista de resultados ao clicar
+  };
+
   return (
     <div className="position-relative custom-container">
       <input
@@ -39,15 +44,17 @@ const MedicineSearch = () => {
       />
       <ul className="list-group custom-list">
         {results.map((medicamento, index) => (
-          <Link to={`/medicine/${medicamento.numProcesso}`} key={index}>
-          <li className="list-group-item custom-list-item">
-            <div className="ms-2">
-              <div className="fw-bold">{medicamento.nomeProduto}</div>
-              <p className="text-limit">
-                {medicamento.razaoSocial}
-              </p>
-            </div>
-          </li>
+          <Link
+            to={`/medicine/${medicamento.numProcesso}`}
+            key={index}
+            onClick={handleItemClick}
+          >
+            <li className="list-group-item custom-list-item">
+              <div className="ms-2">
+                <div className="fw-bold">{medicamento.nomeProduto}</div>
+                <p className="text-limit">{medicamento.razaoSocial}</p>
+              </div>
+            </li>
           </Link>
         ))}
       </ul>
