@@ -1,15 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import MedicineSearch from "./MedicineSeach";
-import "./style.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import MedicineSearch from './MedicineSeach';
+import './style.css';
 
 function Navigationbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark p-3">
-      <div className="container-fluid">
+    <nav className='navbar navbar-expand-lg bg-dark p-3'>
+      <div className='container-fluid'>
         <img
-          className="navbar-brand"
-          src="https://www.medware.com.br/wp-content/uploads/2022/08/logo-medware.png"
+          className='navbar-brand'
+          src='https://www.medware.com.br/wp-content/uploads/2022/08/logo-medware.png'
           style={{ maxWidth: "100%", maxHeight: "75px" }}
           alt="Logo Medware"
         />

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import Logo from "../assets/filetype-pdf.svg";
 
-const MedicineDetails = () => {
+  const MedicineDetails = () => {
   const [medicationDetails, setMedicationDetails] = useState(null);
   const [bulaPDF, setBulaPDF] = useState(null);
 
@@ -23,9 +23,11 @@ const MedicineDetails = () => {
           principioAtivo: detalhes.principioAtivo,
           medicamentoReferencia: detalhes.medicamentoReferencia,
           categoriaRegulatoria: detalhes.categoriaRegulatoria,
-          razaoSocial: detalhes.empresa.razaoSocial
+          razaoSocial: detalhes.empresa.razaoSocial,
         });
-        setBulaPDF (`https://bula.vercel.app/pdf?id=${detalhes.codigoBulaPaciente}`)
+        setBulaPDF(
+          `https://bula.vercel.app/pdf?id=${detalhes.codigoBulaPaciente}`
+        );
       })
 
       .catch((error) => {
@@ -34,12 +36,14 @@ const MedicineDetails = () => {
   }, [location.pathname]);
 
   return (
-    <div className="row">
+    <div className='row'>
       {medicationDetails && (
         <div>
-          <div className="col-12 col-md-8 offset-md-2">
-            <h2 className="text-center">Informações do Medicamento</h2>
-            <table className="table table-striped table-primary mt-4">
+          <div className='col-12 col-md-8 offset-md-2'>
+            <h2 className='text-center'>
+              Informações do Medicamento
+              </h2>
+            <table className='table table-striped table-primary mt-4'>
               <tbody>
                 <tr>
                   <th>Nome do Produto</th>
@@ -68,12 +72,14 @@ const MedicineDetails = () => {
               </tbody>
             </table>
           </div>
-          <h2 className="pb-2">Download da Bula</h2>
+          <h2 className='pb-2'>
+            Download da Bula
+            </h2>
           <a href={bulaPDF} download target='_blank'>
             <img
               src={Logo}
-              style={{ maxWidth: "100%", maxHeight: "200px", width: "50px" }}
-              alt="Logo PDF"
+              style={{ maxWidth: '100%', maxHeight: '200px', width: '50px' }}
+              alt='Logo PDF'
             />
           </a>
         </div>
