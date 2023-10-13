@@ -1,5 +1,7 @@
 🚀 Como executar o projeto
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: Git, React, NPM. Além disto é bom ter um editor para trabalhar com o código como VSCode
+Para começar, clone o repositório.
+Dê um cd no projeto
 
 # Instale as dependências
 $ npm install
