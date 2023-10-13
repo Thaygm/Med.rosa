@@ -1,6 +1,6 @@
 .input-container {
-  margin-right: 80px; /* Espaço à direita do campo de input */
-  max-width: 300px; /* Largura máxima da div */
+  margin-right: 80px; 
+  max-width: 300px; 
 }
 
 .custom-list {
@@ -20,7 +20,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 100%; /* Largura máxima para o texto dentro dos itens da lista */
+  max-width: 100%; 
 }
 
-/* Adicione outros estilos conforme necessário */
+
